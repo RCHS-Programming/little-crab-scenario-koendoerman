@@ -1,23 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Crab here.
+ * Write a description of class Lobster here.
  * 
- * @author (your name) 
+ * @author Koen Doerman 
  * @version (a version number or a date)
  */
-public class Crab extends Actor
+public class Lobster extends Actor
 {
-    /**
-     * Act - do whatever the Crab wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     public void act() 
     {
-        if( isAtEdge());
+        isAtEdge();
         randomTurn();
         move();  
-        lookForWorm();
+        lookForCrab();
     }
     
     public void move( )
@@ -29,11 +26,11 @@ public class Crab extends Actor
      * Check whether we have stumbled upon a worm 
      * If we have, eat it. If not, do nothing
      */
-    public void lookForWorm()
+    public void lookForCrab()
     {
-        if(isTouching (Worm.class))
+        if(isTouching (Crab.class))
         {
-            removeTouching(Worm.class );
+            removeTouching(Crab.class );
     
         }  
     }
@@ -58,6 +55,4 @@ public class Crab extends Actor
             turn(17);
         }  
     }
-
 }
-   
