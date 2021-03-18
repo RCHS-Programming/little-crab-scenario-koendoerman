@@ -10,10 +10,7 @@ public class Crab extends Actor
 {
     public void act() 
     {
-        if( Greenfoot.isKeyDown("left") )
-        {
-            
-        }
+        checkKeyPress();
         move();  
         lookForWorm();
     }
@@ -32,8 +29,25 @@ public class Crab extends Actor
         if(isTouching (Worm.class))
         {
             removeTouching(Worm.class );
+            Greenfoot.playSound("slurp.wav");
     
         }  
+    }
+    
+    /*
+     * Check whether a user has pressed the keyboard key
+     * If so, turn the crab
+     */
+    public void checkKeyPress()
+    {
+        if( Greenfoot.isKeyDown("left") )
+        {
+            turn(-4);
+        }
+        if( Greenfoot.isKeyDown("right") )
+        {
+            turn(4);
+        }
     }
 }
    
