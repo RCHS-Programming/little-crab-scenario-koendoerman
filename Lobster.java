@@ -11,7 +11,7 @@ public class Lobster extends Actor
     
     public void act() 
     {
-        isAtEdge();
+        turnAtEdge();
         randomTurn();
         move();  
         lookForCrab();

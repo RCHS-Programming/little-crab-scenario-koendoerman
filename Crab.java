@@ -8,14 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Crab extends Actor
 {
-    /**
-     * Act - do whatever the Crab wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act() 
     {
-        if( isAtEdge());
-        randomTurn();
+        if( Greenfoot.isKeyDown("left") )
+        {
+            
+        }
         move();  
         lookForWorm();
     }
@@ -37,27 +35,5 @@ public class Crab extends Actor
     
         }  
     }
-    
-    /*
-     * Make the crab turn randomly left or right between 0 and 45 degrees
-     */
-    public void randomTurn()
-    {
-        if( Greenfoot.getRandomNumber(100)<10)
-        {
-            turn( Greenfoot.getRandomNumber(91) - 45 );
-        }
-    }
-    /*
-     * 
-     */
-    public void turnAtEdge() 
-    {
-        if( isAtEdge() )
-        {
-            turn(17);
-        }  
-    }
-
 }
    
