@@ -8,6 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Crab extends Actor
 {
+    private GreenfootImage image1;
+    private GreenfootImage image2;
+    
+    public Crab()
+    {
+       image1 = new GreenfootImage( "crab.png");
+       image2 = new GreenfootImage( "crab2.png");
+       setImage (image1);
+    }
     public void act() 
     {
         checkKeyPress();
@@ -25,6 +34,7 @@ public class Crab extends Actor
      * If we have, eat it. If not, do nothing
      */
     public void lookForWorm()
+    
     {
         if(isTouching (Worm.class))
         {
