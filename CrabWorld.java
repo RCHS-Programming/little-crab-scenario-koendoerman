@@ -9,6 +9,9 @@ public class CrabWorld extends World
     public CrabWorld() 
     {
         super(560, 560, 1);
+        
+        showText( "Score: 0", 50, 510);
+        
         addObject ( new Crab(), 150, 100);
         addObject ( new Lobster(), 400, 100);
         addObject ( new Lobster(), 400, 200);
@@ -23,6 +26,7 @@ public class CrabWorld extends World
         addObject ( new Worm (), Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
         addObject ( new Worm (), Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
         addObject ( new Worm (), Greenfoot.getRandomNumber(561), Greenfoot.getRandomNumber(561));
+        
        
         
     }
