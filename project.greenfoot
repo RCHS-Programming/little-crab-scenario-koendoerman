@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon May 10 07:59:04 EDT 2021
+#Wed May 12 08:06:51 EDT 2021
 target4.type=ClassTarget
 class.AntWorld.superclass=greenfoot.World
 dependency3.from=Lobster
@@ -43,9 +43,9 @@ class.Asteroid.superclass=
 target1.width=80
 dependency2.to=Worm
 dependency5.type=UsesDependency
-editor.fx.0.y=78
+editor.fx.0.y=82
 target2.typeParameters=
-editor.fx.0.x=-51
+editor.fx.0.x=232
 class.CrabWorld.image=sand.jpg
 dependency3.to=Crab
 class.Lobster.superclass=greenfoot.Actor
